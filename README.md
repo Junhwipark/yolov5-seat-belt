@@ -96,7 +96,7 @@ The performance of the seatbelt detection model was evaluated using key metrics 
      - `mAP@0.5`: Achieved 0.767, indicating high performance at IoU threshold 0.5.
      - `mAP@0.5:0.95`: Scored 0.43, showing overall robustness across different IoU thresholds.
 
-   ![Metrics](results.png)
+   ![Metrics](runs/train/exp2/results.png)
 
 ---
 
@@ -104,12 +104,12 @@ The performance of the seatbelt detection model was evaluated using key metrics 
 - **Bounding Box Correlation Matrix:**  
   The plot below analyzes relationships among bounding box attributes (`x`, `y`, `width`, `height`). It highlights clustering patterns where annotations are concentrated.
   
-  ![Bounding Box Correlation](labels_correlogram.jpg)
+  ![Bounding Box Correlation](runs/train/exp2/labels_correlogram.jpg)
 
 - **Label Distribution and Spatial Patterns:**  
   The label distribution graph shows the frequency of seatbelt instances across the dataset and their spatial coverage.
 
-  ![Label Distribution](labels.jpg)
+  ![Label Distribution](runs/train/exp2/labels.jpg)
 
 ---
 
@@ -117,10 +117,10 @@ The performance of the seatbelt detection model was evaluated using key metrics 
 Below are examples of the model's detection results on validation data, demonstrating its performance in real-world scenarios.
 
 1. **Batch 1 Results**  
-   ![Batch 1 Results](val_batch1_pred.jpeg)
+   ![Batch 1 Results](runs/train/exp2/val_batch1_pred.jpeg)
 
 2. **Batch 2 Results**  
-   ![Batch 2 Results](val_batch2_pred.jpeg)
+   ![Batch 2 Results](runs/train/exp2/val_batch2_pred.jpeg)
 
 ---
 
