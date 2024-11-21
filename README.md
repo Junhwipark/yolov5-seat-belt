@@ -85,7 +85,7 @@ The performance of the seatbelt detection model was evaluated using key metrics 
    - The validation loss mirrors the training loss pattern, indicating the model is not overfitting and generalizes well to unseen data.
    - Key takeaway: The decreasing trends in loss demonstrate the model's steady learning and improving predictions.
 
-   ![Training and Validation Loss](results.png)
+   ![Training and Validation Loss](runs/train/exp2/results.png)
 
 ---
 
