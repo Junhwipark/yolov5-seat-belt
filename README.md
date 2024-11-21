@@ -96,7 +96,7 @@ The performance of the seatbelt detection model was evaluated using key metrics 
      - `mAP@0.5`: Achieved 0.767, indicating high performance at IoU threshold 0.5.
      - `mAP@0.5:0.95`: Scored 0.43, showing overall robustness across different IoU thresholds.
 
-   ![Metrics](runs/train/exp2/results.png)
+   ![Metrics](runs/train/exp2/PR_curve.png)
 
 ---
 
