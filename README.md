@@ -65,8 +65,6 @@ This project addresses critical aspects of road safety and provides the followin
 
 ---
 
-This README serves as an overview of the project, highlighting its objectives, challenges, and the potential value it can bring to vehicle safety systems. Feel free to contribute or suggest improvements!
-
 # Seatbelt Detection Model
 
 This project focuses on developing a deep learning-based model to detect seatbelt usage in real time. Below is an overview of the model's performance evaluation and visual analysis.
