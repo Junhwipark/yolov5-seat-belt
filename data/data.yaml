@@ -1,0 +1,13 @@
+train: data/train/images
+val: data/valid/images
+test: data/test/images
+
+nc: 1
+names: ['seat_belt']
+
+roboflow:
+  workspace: aleema
+  project: seat-belt-detection-udcfg-kwomu-7gw9v
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/aleema/seat-belt-detection-udcfg-kwomu-7gw9v/dataset/2
