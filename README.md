@@ -117,10 +117,10 @@ The performance of the seatbelt detection model was evaluated using key metrics 
 Below are examples of the model's detection results on validation data, demonstrating its performance in real-world scenarios.
 
 1. **Batch 1 Results**  
-   ![Batch 1 Results](runs/train/exp2/val_batch1_pred.jpeg)
+   ![Batch 1 Results](runs/train/exp2/val_batch1_pred.jpg)
 
 2. **Batch 2 Results**  
-   ![Batch 2 Results](runs/train/exp2/val_batch2_pred.jpeg)
+   ![Batch 2 Results](runs/train/exp2/val_batch2_pred.jpg)
 
 ---
 
