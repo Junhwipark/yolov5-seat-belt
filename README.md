@@ -66,3 +66,80 @@ This project addresses critical aspects of road safety and provides the followin
 ---
 
 This README serves as an overview of the project, highlighting its objectives, challenges, and the potential value it can bring to vehicle safety systems. Feel free to contribute or suggest improvements!
+
+# Seatbelt Detection Model
+
+This project focuses on developing a deep learning-based model to detect seatbelt usage in real time. Below is an overview of the model's performance evaluation and visual analysis.
+
+---
+
+## 6. Performance Analysis
+
+### **Model Performance Evaluation**
+The performance of the seatbelt detection model was evaluated using key metrics such as Precision, Recall, F1-score, and mAP (mean Average Precision). These metrics provide detailed insights into how accurately and comprehensively the model detects seatbelt usage in various scenarios.
+
+---
+
+### **Performance Results Visualization**
+
+1. **Training and Validation Loss**
+   - The graph below shows a consistent reduction in training and validation losses (`box_loss`, `obj_loss`, `cls_loss`) during the training process.
+   - The validation loss mirrors the training loss pattern, indicating the model is not overfitting and generalizes well to unseen data.
+   - Key takeaway: The decreasing trends in loss demonstrate the model's steady learning and improving predictions.
+
+   ![Training and Validation Loss](results.png)
+
+---
+
+2. **Precision, Recall, and mAP Metrics**
+   - **Precision:** Reflects the proportion of correct detections out of all detections, reaching a maximum of ~0.75.
+   - **Recall:** Measures the model's ability to detect all actual objects, improving throughout the training process.
+   - **mAP (mean Average Precision):**
+     - `mAP@0.5`: Achieved 0.767, indicating high performance at IoU threshold 0.5.
+     - `mAP@0.5:0.95`: Scored 0.43, showing overall robustness across different IoU thresholds.
+
+   ![Metrics](results.png)
+
+---
+
+### **Bounding Box and Label Distribution**
+- **Bounding Box Correlation Matrix:**  
+  The plot below analyzes relationships among bounding box attributes (`x`, `y`, `width`, `height`). It highlights clustering patterns where annotations are concentrated.
+  
+  ![Bounding Box Correlation](labels_correlogram.jpg)
+
+- **Label Distribution and Spatial Patterns:**  
+  The label distribution graph shows the frequency of seatbelt instances across the dataset and their spatial coverage.
+
+  ![Label Distribution](labels.jpg)
+
+---
+
+### **Detection Examples**
+Below are examples of the model's detection results on validation data, demonstrating its performance in real-world scenarios.
+
+1. **Batch 1 Results**  
+   ![Batch 1 Results](val_batch1_pred.jpeg)
+
+2. **Batch 2 Results**  
+   ![Batch 2 Results](val_batch2_pred.jpeg)
+
+---
+
+### **Key Insights**
+- **Strengths:**
+  - The model demonstrates stable learning with reducing losses and strong generalization across validation data.
+  - High mAP scores indicate excellent performance in detecting seatbelt instances.
+  - Works well under various conditions, including different lighting and multi-passenger scenarios.
+
+- **Limitations:**
+  - The model struggles in complex backgrounds or with low-confidence detections.
+  - Misclassification and false positives occur in cases with visually similar objects or poor lighting.
+
+- **Proposed Improvements:**
+  - **Data Augmentation:** Enhance the dataset with varied lighting, backgrounds, and object placements.
+  - **Post-Processing:** Add advanced filtering algorithms to reduce false positives and improve classification confidence.
+
+---
+
+This README provides an overview of the model's performance and identifies areas for further improvement. For additional details or contributions, feel free to reach out!
